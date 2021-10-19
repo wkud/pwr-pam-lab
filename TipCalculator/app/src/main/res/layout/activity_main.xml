@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="left"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="top"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+
+        <EditText
+            android:id="@+id/foodName"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:hint="Enter food name"
+            android:inputType="textPersonName" />
+
+        <LinearLayout
+            android:id="@+id/priceRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/priceLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price:"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:ems="10"
+                android:inputType="numberDecimal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/ratingLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Rating:"
+                android:textSize="20sp" />
+
+            <RatingBar
+                android:id="@+id/rating"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:indeterminate="false"
+                android:max="5"
+                android:numStars="5"
+                android:progress="1"
+                android:rating="1"
+                android:stepSize="1" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tipLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="How much are you willing to tip?"
+            android:textSize="20sp" />
+
+        <RadioGroup
+            android:id="@+id/tipRadioGroup"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/tip0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0 %" />
+
+            <RadioButton
+                android:id="@+id/tip5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="5 %" />
+
+            <RadioButton
+                android:id="@+id/tip10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="10 %" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/comeBackLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Are you willing to come back?"
+            android:textSize="20sp" />
+
+        <SeekBar
+            android:id="@+id/comeBack"
+            style="@style/Widget.AppCompat.SeekBar.Discrete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="4"
+            android:progress="3" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/resultLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Total price: "
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/resultPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0,00 zł"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/calculate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calculate Price" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
