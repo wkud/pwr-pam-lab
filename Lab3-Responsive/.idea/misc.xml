@@ -3,7 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/wkud/OneDrive/Workspace/Projects/priv/PAM/Lab3-Responsive/app/src/main/res/layout-large/activity_layout_large.xml" value="0.190625" />
+        <entry key="..\:/Users/wkud/OneDrive/Workspace/Projects/priv/PAM/Lab3-Responsive/app/src/main/res/layout-large/activity_main.xml" value="0.176" />
+        <entry key="..\:/Users/wkud/OneDrive/Workspace/Projects/priv/PAM/Lab3-Responsive/app/src/main/res/layout-normal-land/activity_layout_normal_land.xml" value="0.20625" />
+        <entry key="..\:/Users/wkud/OneDrive/Workspace/Projects/priv/PAM/Lab3-Responsive/app/src/main/res/layout-normal-land/activity_main.xml" value="0.152" />
+        <entry key="..\:/Users/wkud/OneDrive/Workspace/Projects/priv/PAM/Lab3-Responsive/app/src/main/res/layout-normal-port/activity_layout_normal_port.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/wkud/OneDrive/Workspace/Projects/priv/PAM/Lab3-Responsive/app/src/main/res/layout-normal-port/activity_main.xml" value="0.190625" />
         <entry key="..\:/Users/wkud/OneDrive/Workspace/Projects/priv/PAM/Lab3-Responsive/app/src/main/res/layout-small/activity_layout_small.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/wkud/OneDrive/Workspace/Projects/priv/PAM/Lab3-Responsive/app/src/main/res/layout-small/activity_main.xml" value="0.6979166666666666" />
+        <entry key="..\:/Users/wkud/OneDrive/Workspace/Projects/priv/PAM/Lab3-Responsive/app/src/main/res/layout-xlarge/activity_layout_xlarge.xml" value="0.190625" />
+        <entry key="..\:/Users/wkud/OneDrive/Workspace/Projects/priv/PAM/Lab3-Responsive/app/src/main/res/layout/activity_main.xml" value="0.8800000000000001" />
       </map>
     </option>
   </component>

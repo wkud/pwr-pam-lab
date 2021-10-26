@@ -1,24 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
+    android:layout_height="match_parent">
     <GridLayout
         android:id="@+id/parent"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:columnCount="1"
-        android:rowCount="3"
+        android:rowCount="10"
         tools:context=".MainActivity"
         >
 
         <ListView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_rowWeight="1"
+            android:layout_rowWeight="5"
             android:layout_columnWeight="1"
             ></ListView>
 
@@ -41,6 +38,9 @@
             android:rowCount="4"
             tools:context=".MainActivity"
 
+            android:layout_rowWeight="4"
+            android:layout_columnWeight="1">
+
             android:layout_rowWeight="1"
             android:layout_columnWeight="1">
 
@@ -49,6 +49,7 @@
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
                 android:minWidth="10dp"
+                android:minHeight="15dp"
                 android:text="1" />
 
             <Button
@@ -56,6 +57,7 @@
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
                 android:minWidth="10dp"
+                android:minHeight="15dp"
                 android:text="2" />
 
             <Button
@@ -63,6 +65,7 @@
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
                 android:minWidth="10dp"
+                android:minHeight="15dp"
                 android:text="3" />
 
             <Button
@@ -70,6 +73,7 @@
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
                 android:minWidth="10dp"
+                android:minHeight="15dp"
                 android:text="+" />
 
             <Button
@@ -77,6 +81,7 @@
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
                 android:minWidth="10dp"
+                android:minHeight="15dp"
                 android:text="4" />
 
             <Button
@@ -85,6 +90,7 @@
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
                 android:minWidth="10dp"
+                android:minHeight="15dp"
                 android:text="5" />
 
             <Button
@@ -93,6 +99,7 @@
                 android:layout_columnSpan="1"
                 android:layout_columnWeight="1"
                 android:minWidth="10dp"
+                android:minHeight="15dp"
                 android:text="6" />
 
             <Button
@@ -100,6 +107,7 @@
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
                 android:minWidth="10dp"
+                android:minHeight="15dp"
                 android:text="-" />
 
             <Button
@@ -107,6 +115,7 @@
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
                 android:minWidth="10dp"
+                android:minHeight="15dp"
                 android:text="7" />
 
             <Button
@@ -115,6 +124,7 @@
                 android:layout_columnSpan="1"
                 android:layout_columnWeight="1"
                 android:minWidth="10dp"
+                android:minHeight="15dp"
                 android:text="8" />
 
             <Button
@@ -122,6 +132,7 @@
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
                 android:minWidth="10dp"
+                android:minHeight="15dp"
                 android:text="9" />
 
 
@@ -131,6 +142,7 @@
                 android:layout_columnSpan="1"
                 android:layout_columnWeight="1"
                 android:minWidth="10dp"
+                android:minHeight="15dp"
                 android:text="*" />
 
             <Button
@@ -138,6 +150,7 @@
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
                 android:minWidth="10dp"
+                android:minHeight="15dp"
                 android:text="," />
 
             <Button
@@ -145,6 +158,7 @@
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
                 android:minWidth="10dp"
+                android:minHeight="15dp"
                 android:text="0" />
 
             <Button
@@ -152,6 +166,7 @@
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
                 android:minWidth="10dp"
+                android:minHeight="15dp"
                 android:text="=" />
 
             <Button
@@ -159,10 +174,10 @@
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
                 android:minWidth="10dp"
+                android:minHeight="15dp"
                 android:text="/" />
 
 
         </GridLayout>
     </GridLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>
