@@ -7,92 +7,120 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/mapsShow"
+        android:id="@+id/gradeMark"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Show location"
-        app:layout_constraintTop_toBottomOf="@+id/mapsLongitude"
-        tools:layout_editor_absoluteX="16dp" />
-
-    <EditText
-        android:id="@+id/mapsLatitude"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:ems="10"
-        android:hint="Enter latitude"
-        android:inputType="textPersonName"
-        app:layout_constraintTop_toBottomOf="@+id/divider"
-        tools:layout_editor_absoluteX="16dp" />
-
-    <EditText
-        android:id="@+id/mapsLongitude"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:ems="10"
-        android:hint="Enter longitude"
-        android:inputType="textPersonName"
-        app:layout_constraintTop_toBottomOf="@+id/mapsLatitude"
-        tools:layout_editor_absoluteX="16dp" />
-
-    <EditText
-        android:id="@+id/smsNumber"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:ems="10"
-        android:hint="Enter phone number"
-        android:inputType="textPersonName"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="16dp" />
-
-    <EditText
-        android:id="@+id/smsText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:ems="10"
-        android:hint="Enter your sms"
-        android:inputType="textPersonName"
-        app:layout_constraintTop_toBottomOf="@+id/smsNumber"
-        tools:layout_editor_absoluteX="16dp" />
-
-    <Button
-        android:id="@+id/sendSms"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="Send Sms"
-        app:layout_constraintTop_toBottomOf="@+id/smsText"
-        tools:layout_editor_absoluteX="16dp" />
+        android:layout_marginTop="10dp"
+        android:text="Mark a student"
+        app:layout_constraintTop_toBottomOf="@+id/gradeResult"
+        tools:layout_editor_absoluteX="0dp" />
 
     <View
-        android:id="@+id/divider"
+        android:id="@+id/divider3"
         android:layout_width="409dp"
         android:layout_height="1dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="10dp"
         android:background="?android:attr/listDivider"
-        app:layout_constraintTop_toBottomOf="@+id/sendSms"
-        tools:layout_editor_absoluteX="1dp" />
-
-    <View
-        android:id="@+id/divider2"
-        android:layout_width="409dp"
-        android:layout_height="1dp"
-        android:layout_marginTop="16dp"
-        android:background="?android:attr/listDivider"
-        app:layout_constraintTop_toBottomOf="@+id/mapsShow"
-        tools:layout_editor_absoluteX="1dp" />
+        app:layout_constraintTop_toBottomOf="@+id/contactsShow" />
 
     <Button
         android:id="@+id/contactsShow"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="10dp"
         android:text="Show Contacts"
-        app:layout_constraintTop_toBottomOf="@+id/divider2"
-        tools:layout_editor_absoluteX="25dp" />
+        app:layout_constraintTop_toBottomOf="@+id/divider2" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintTop_toBottomOf="@+id/sendSms" />
+
+    <EditText
+        android:id="@+id/mapsLatitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Enter latitude"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+    <EditText
+        android:id="@+id/smsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Enter your sms"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/smsNumber" />
+
+    <Button
+        android:id="@+id/sendSms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Send Sms"
+        app:layout_constraintTop_toBottomOf="@+id/smsText" />
+
+    <EditText
+        android:id="@+id/smsNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="Enter phone number"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/mapsLongitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Enter longitude"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/mapsLatitude" />
+
+    <Button
+        android:id="@+id/mapsShow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Show location"
+        app:layout_constraintTop_toBottomOf="@+id/mapsLongitude" />
+
+    <EditText
+        android:id="@+id/gradeIndex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Ented index number"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/divider3" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintTop_toBottomOf="@+id/mapsShow" />
+
+    <TextView
+        android:id="@+id/gradeResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/gradeIndex"
+        tools:layout_editor_absoluteX="0dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
