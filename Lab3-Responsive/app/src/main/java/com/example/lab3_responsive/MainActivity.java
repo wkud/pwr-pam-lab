@@ -9,12 +9,14 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import java.util.ArrayList;
+import java.util.regex.Pattern;
 
 public class MainActivity extends AppCompatActivity {
 
     StringBuilder equation = new StringBuilder();
     ArrayList<Button> buttons = new ArrayList<Button>();
     TextView equationLabel;
+    final String equationRegex = "^(\\d+[\\+\\/\\*\\,\\- ]?)*\\d$";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,6 +54,56 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onResult(View v) {
+        if (isEquationValid()) {
+            equation.append(" = ");
+
+
+            equation.append("");
+        }
+    }
+
+    private boolean isEquationValid() {
+        String input = equation.toString();
+        Pattern pattern = Pattern.compile(equationRegex);
+        return pattern.matcher(input).matches();
+    }
+
+    private double getResult(String input) {
+        String[] sumParts = input.split("\\+");
+        double sum = add(sumParts);
+        return sum;
+    }
+
+    private double add(String[] sumParts)
+    {
+        for (String sumPart : sumParts) {
+            String[] subParts = sumPart.split("\\-");
+            sub(subParts);
+
+        }
+    }
+    private double sub(String[] subParts) {
+        for (String subPart : subParts) {
+            String[] divParts = subPart.split("\\/");
+            div(divParts);
+
+        }
+    }
+    private double div(String[] divParts) {
+        for (String divPart : divParts) {
+            String[] multParts = divPart.split("\\*");
+            mult(multParts);
+
+        }
+    }
+    private double mult(String[] multParts) {
+        for (String multPart : multParts) {
+            double number = Double.parseDouble(multPart);
+        }
+    }
+
+
+
+
 
     }
-}
